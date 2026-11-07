@@ -1,0 +1,10 @@
+filebeat.modules:
+  - module: system
+    syslog:
+      enabled: false
+    auth:
+      enabled: true
+      var.paths: ["/host/var/log/auth.log"]
+
+output.elasticsearch:
+  hosts: ["http://elasticsearch:9200"]
