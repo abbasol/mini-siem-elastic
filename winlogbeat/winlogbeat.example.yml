@@ -1,0 +1,6 @@
+winlogbeat.event_logs:
+  - name: Security
+    event_id: 4624, 4625
+
+output.elasticsearch:
+  hosts: ["http://<KALI_IP>:9200"]
